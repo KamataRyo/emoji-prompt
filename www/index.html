@@ -9,25 +9,29 @@
 <body>
   <h1 class="title">Emoji Prompt</h1>
   <p class="description"><span class="title_reffered">Emoji Prompt</span> is small Bash ShellScript Library to show an Emoji at the head of your prompt.</p>
-  <terminal>
-    <line>
-      <prompt>[ryo@host1 ~] $ </prompt>
-      <stdin>ssh joe@host2</stdin>
-    </line>
-    <line>
-      <stdout>Last login: Wed Jul  6 11:10:16 2016 from example.com</stdout>
-    </line>
-    <line>
-      <prompt>[ryo@host1 ~] $ </prompt>
-      <stdin>ssh joe@host2</stdin>
-    </line>
-  </terminal>
-  <!-- <pre class="mock-terminal">
-    <div class="commandline">[user@host ~] $ <div></div>
-    data-stream=""
-  ></pre> -->
-  <a href="#" class="button-ghost button-white">Try it</a>
-  <a href="https://github.com/KamataRyo/emoji-prompt">Github</a>
+
+  <div id="terminal" ng-app="pseudoTerm">
+
+    <terminal repeat="true" wait-after="1000">
+      <line delay="100">
+        <prompt                 content="🌵 [ryo@host1 ~] $ ">
+        <stdin stream-speed="4" content="ssh joe@host2">
+      </line>
+      <line delay="100">
+        <stdout                 content="Last login: Wed Jul  6 11:10:16 2016 from example.com">
+      </line>
+      <line delay="100">
+        <prompt                 content="🐬 [ryo@host1 ~] $ ">
+        <stdin stream-speed="4" content="ssh joe@host2">
+      </line>
+    </terminal>
+
+  </div>
+
+
+  <p><a href="#" class="button-ghost button-white">Try it</a></p>
+  <p>I 💙 feedbacks.<a href="https://github.com/KamataRyo/emoji-prompt">Github</a></p>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
   <script src="app.js"></script>
 </body>

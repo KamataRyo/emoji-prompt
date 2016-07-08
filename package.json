@@ -5,8 +5,8 @@
   "main": "emoji-prompt.sh",
   "scripts": {
     "build": "./node_modules/.bin/gulp coffee",
-    "www": "npm run build && ./node_modules/.bin/http-server -o",
     "watch": "./node_modules/.bin/gulp watch",
+    "www": "npm run build && ./node_modules/.bin/http-server ./www/ -o",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
