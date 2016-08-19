@@ -1,0 +1,18 @@
+language: bash
+
+sudo: false
+
+addons:
+  apt:
+    sources:
+    - debian-sid
+    packages:
+    - shellcheck
+    - tree
+
+before_script:
+- shellcheck *.sh
+
+script:
+- set -e
+- bash emoji-prompt_test.sh

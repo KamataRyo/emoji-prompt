@@ -32,10 +32,10 @@ $ mv emoji-prompt/emoji-prompt.sh ~/.emoji-prompt.sh
 $ vi ~/.bash_profile
 ..
 source $HOME/.emoji-prompt.sh
-export PS1="(__emoji_pt \h \h) [\u@\h \W] $ "
+export PS1="(__emoji_pt \u \h) [\u@\h \W] $ "
 ```
 
-# frequent questions
+# Questions and Usages
 - Q. I don't like the choosen Emoji for my main prompt.
   ```
   🐛 [user@host ~] $ _
