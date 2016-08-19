@@ -49,4 +49,4 @@ for (( i = 1; i < 5; i++ )); do
 done
 
 # exit test
-exit 1
+exit 0

@@ -8,7 +8,6 @@ addons:
     - debian-sid
     packages:
     - shellcheck
-    - tree
 
 before_script:
 - shellcheck *.sh

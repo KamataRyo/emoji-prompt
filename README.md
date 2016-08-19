@@ -1,4 +1,7 @@
 # Emoji Prompt
+
+[![Build Status](https://travis-ci.org/KamataRyo/emoji-prompt.svg?branch=master)](https://travis-ci.org/KamataRyo/emoji-prompt)
+
 You can put Emoji at your prompts.
 This is not simply randomized, hashed and serialized for the prompt.
 It would be more distinguishable whose and which shell you are using.
