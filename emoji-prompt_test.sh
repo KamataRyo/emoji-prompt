@@ -37,7 +37,7 @@ fi
 
 echo "#4:It should make emoji offset with 3rd argument."
 STDOUT1=$(__emoji_pt arg1 arg2)
-for (( i = 1; i < 5; i++ )); do
+for (( i = 1; i < 300; i++ )); do
   echo "    trial-$i"
   STDOUT2=$(__emoji_pt arg1 arg2 $i)
   if [[ ${#STDOUT1} == 1 && ${#STDOUT2} == 1 && "$STDOUT1" != "$STDOUT2" ]]; then
