@@ -2,8 +2,8 @@
 
 set -eu
 source "emoji-prompt.sh"
-echo "Testing emoji-prompt.sh..."
 
+echo "Test starting..."
 
 echo "#1:It should be an error without arguments."
 STDOUT=$(__emoji_pt)
@@ -49,4 +49,5 @@ for (( i = 1; i < 5; i++ )); do
 done
 
 # exit test
+echo "It passed all tests!"
 exit 0
